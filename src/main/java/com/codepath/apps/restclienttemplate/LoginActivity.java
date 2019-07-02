@@ -7,11 +7,12 @@ import android.view.Menu;
 import android.view.View;
 
 import com.codepath.apps.restclienttemplate.models.SampleModel;
+import com.codepath.apps.restclienttemplate.models.SampleModelDao;
 import com.codepath.oauth.OAuthLoginActionBarActivity;
 
 public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 
-	TwitterDao twitterDao;
+	//TwitterDao twitterDao;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,7 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 		final SampleModel sampleModel = new SampleModel();
 		sampleModel.setName("CodePath");
 
-		twitterDao = ((TwitterApp) getApplicationContext()).getMyDatabase().TwitterDao();
+		final SampleModelDao sampleModelDao = ((TwitterApp) getApplicationContext()).getMyDatabase().sampleModelDao();
 
 		AsyncTask.execute(new Runnable() {
 			@Override

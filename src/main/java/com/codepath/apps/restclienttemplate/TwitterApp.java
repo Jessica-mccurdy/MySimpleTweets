@@ -21,6 +21,10 @@ public class TwitterApp extends Application {
 
     MyDatabase myDatabase;
 
+    public static Object getRestClient() {
+        return getRestClient();
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();
