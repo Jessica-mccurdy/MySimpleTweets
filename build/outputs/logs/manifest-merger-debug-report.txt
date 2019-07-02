@@ -1,0 +1,214 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:2:1-39:12
+MERGED from [com.codepath.libraries:android-oauth-handler:1.4.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/12d472a1915422d58aafca86a55430eb/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/e53f4fecf18b605c0334089d9fb38da7/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/36b177f943b75602372b4c014816de69/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/585352479ff48e7fd3a8a93f148339f4/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/4f4e08334fbdab7286d17a814f745e58/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/95c88de1867e901bc8c72aeab915bc17/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/c5d1b8f2f635fb4148671a8b60e37aab/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/50f3f0e46ef97ac1142bf63e6de44a48/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/d2a48b9dceadc69f494054caa2cd0596/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/50b9147f6fab202fbf01f61248724851/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/d70a916f1ec157f3b40eb3644005f295/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/fdfdc7b4e13786c5aae452494fe02eb9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/b863e9bf9c52b977d06d48ef525c45f1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/b79261e319dc8a46b07ecb66094babe2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/3a266e229e3eb196266114a6d8ecd309/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/c03b2087f8b8da44991fde04130d734c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/95a7240e8de436d22789fb9d330c2669/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/a1d2be4b47962ed65a257663e91cc401/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/4acd7d78d34ed86f25752d20e12c3caf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/689f6b9fffc68fbfb3da86534a3b4fea/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/6e06bda265c9e0f63401500562b9ee1c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/2697d980204c392331da625c79fc7e1c/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/fc0e711bca9c4ac658d9a2311e5efcfc/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/45b8a24e559c5fc583bfd9f123f4dcd5/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/59f5afce8af731b0fd04170f4280bf82/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.persistence:db:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/74bf1fac2326f0080a2692bcdce284f4/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/c7a24d84e62e4fd111c972dc528d7374/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/19adb5fea55baf0626b8c5372e90dea1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/709fe1c60c7d44fd0fa67a20e47bf8bb/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/7555c0d8fd51f6b803f2dea5c667f01a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/8fea241587ebe38f264ed012ecc5c6d8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/dabb4a12ed409b8af3e0f284ead2c88a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/0729c533300a4a30f3a964bab6b48070/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/1b46300fa878313e469bf1874b98dd24/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/3aef602ded69d0fc01a2bf61c954123f/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:2:1-39:12
+	package
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:3:5-51
+		INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:7:5-67
+	android:name
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:7:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:8:22-78
+application
+ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:10:5-37:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/585352479ff48e7fd3a8a93f148339f4/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/585352479ff48e7fd3a8a93f148339f4/AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/4f4e08334fbdab7286d17a814f745e58/AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/4f4e08334fbdab7286d17a814f745e58/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/2697d980204c392331da625c79fc7e1c/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/2697d980204c392331da625c79fc7e1c/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/fc0e711bca9c4ac658d9a2311e5efcfc/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/fc0e711bca9c4ac658d9a2311e5efcfc/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/2697d980204c392331da625c79fc7e1c/AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:14:9-41
+	android:icon
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:13:9-45
+	android:allowBackup
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:15:9-40
+	android:name
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.codepath.apps.restclienttemplate.TimelineActivity
+ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:16:9-63
+	android:name
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:16:19-51
+activity#com.codepath.apps.restclienttemplate.LoginActivity
+ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:17:9-36:20
+	android:label
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:19:13-45
+	android:theme
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:20:13-44
+	android:name
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:18:13-42
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:21:13-25:29
+action#android.intent.action.MAIN
+ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:22:17-69
+	android:name
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:22:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:24:17-77
+	android:name
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:24:27-74
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:@string/intent_host+data:scheme:@string/intent_scheme
+ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:26:13-35:29
+action#android.intent.action.VIEW
+ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:27:17-69
+	android:name
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:27:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:29:17-76
+	android:name
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:29:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:30:17-78
+	android:name
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:30:27-75
+data
+ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:32:17-34:62
+	android:host
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:33:21-55
+	android:scheme
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:34:21-59
+uses-sdk
+INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml
+INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml
+MERGED from [com.codepath.libraries:android-oauth-handler:1.4.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/12d472a1915422d58aafca86a55430eb/AndroidManifest.xml:7:5-9:41
+MERGED from [com.codepath.libraries:android-oauth-handler:1.4.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/12d472a1915422d58aafca86a55430eb/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/e53f4fecf18b605c0334089d9fb38da7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/e53f4fecf18b605c0334089d9fb38da7/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/36b177f943b75602372b4c014816de69/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/36b177f943b75602372b4c014816de69/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/585352479ff48e7fd3a8a93f148339f4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/585352479ff48e7fd3a8a93f148339f4/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/4f4e08334fbdab7286d17a814f745e58/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/4f4e08334fbdab7286d17a814f745e58/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/95c88de1867e901bc8c72aeab915bc17/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/95c88de1867e901bc8c72aeab915bc17/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/c5d1b8f2f635fb4148671a8b60e37aab/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/c5d1b8f2f635fb4148671a8b60e37aab/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/50f3f0e46ef97ac1142bf63e6de44a48/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/50f3f0e46ef97ac1142bf63e6de44a48/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/d2a48b9dceadc69f494054caa2cd0596/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/d2a48b9dceadc69f494054caa2cd0596/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/50b9147f6fab202fbf01f61248724851/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/50b9147f6fab202fbf01f61248724851/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/d70a916f1ec157f3b40eb3644005f295/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/d70a916f1ec157f3b40eb3644005f295/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/fdfdc7b4e13786c5aae452494fe02eb9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/fdfdc7b4e13786c5aae452494fe02eb9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/b863e9bf9c52b977d06d48ef525c45f1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/b863e9bf9c52b977d06d48ef525c45f1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/b79261e319dc8a46b07ecb66094babe2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/b79261e319dc8a46b07ecb66094babe2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/3a266e229e3eb196266114a6d8ecd309/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/3a266e229e3eb196266114a6d8ecd309/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/c03b2087f8b8da44991fde04130d734c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/c03b2087f8b8da44991fde04130d734c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/95a7240e8de436d22789fb9d330c2669/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/95a7240e8de436d22789fb9d330c2669/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/a1d2be4b47962ed65a257663e91cc401/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/a1d2be4b47962ed65a257663e91cc401/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/4acd7d78d34ed86f25752d20e12c3caf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/4acd7d78d34ed86f25752d20e12c3caf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/689f6b9fffc68fbfb3da86534a3b4fea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/689f6b9fffc68fbfb3da86534a3b4fea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/6e06bda265c9e0f63401500562b9ee1c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/6e06bda265c9e0f63401500562b9ee1c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/2697d980204c392331da625c79fc7e1c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/2697d980204c392331da625c79fc7e1c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/fc0e711bca9c4ac658d9a2311e5efcfc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/fc0e711bca9c4ac658d9a2311e5efcfc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/45b8a24e559c5fc583bfd9f123f4dcd5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/45b8a24e559c5fc583bfd9f123f4dcd5/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/59f5afce8af731b0fd04170f4280bf82/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db-framework:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/59f5afce8af731b0fd04170f4280bf82/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/74bf1fac2326f0080a2692bcdce284f4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.persistence:db:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/74bf1fac2326f0080a2692bcdce284f4/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/c7a24d84e62e4fd111c972dc528d7374/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/c7a24d84e62e4fd111c972dc528d7374/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/19adb5fea55baf0626b8c5372e90dea1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/19adb5fea55baf0626b8c5372e90dea1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/709fe1c60c7d44fd0fa67a20e47bf8bb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/709fe1c60c7d44fd0fa67a20e47bf8bb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/7555c0d8fd51f6b803f2dea5c667f01a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/7555c0d8fd51f6b803f2dea5c667f01a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/8fea241587ebe38f264ed012ecc5c6d8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/8fea241587ebe38f264ed012ecc5c6d8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/dabb4a12ed409b8af3e0f284ead2c88a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/dabb4a12ed409b8af3e0f284ead2c88a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/0729c533300a4a30f3a964bab6b48070/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/0729c533300a4a30f3a964bab6b48070/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/1b46300fa878313e469bf1874b98dd24/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/1b46300fa878313e469bf1874b98dd24/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/3aef602ded69d0fc01a2bf61c954123f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/3aef602ded69d0fc01a2bf61c954123f/AndroidManifest.xml:20:5-44
+INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml
+INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml
