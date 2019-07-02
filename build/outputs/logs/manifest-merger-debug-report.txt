@@ -85,7 +85,7 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/jessicamccur
 	android:theme
 		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:15:9-40
 	android:name
-		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:11:9-35
 activity#com.codepath.apps.restclienttemplate.TimelineActivity
 ADDED from /Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/AndroidManifest.xml:16:9-63
 	android:name

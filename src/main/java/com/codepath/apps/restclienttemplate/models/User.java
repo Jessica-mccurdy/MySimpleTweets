@@ -1,17 +1,15 @@
 package com.codepath.apps.restclienttemplate.models;
 
-import android.arch.persistence.room.ColumnInfo;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class User {
 
-    @ColumnInfo
-    String name;
+    //@ColumnInfo
+    //String name;
 
     // attributes
-
+    public String name;
     public long uid;
     public String screenName;
     public String profileImageUrl;

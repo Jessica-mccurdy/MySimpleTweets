@@ -12,9 +12,8 @@ import com.codepath.apps.restclienttemplate.models.Tweet;
 
 import java.util.List;
 
-public class TweetAdapter {
+public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> {
 
-    public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> {
 
         //pass in the Tweets array in the constructor
         private List<Tweet> mTweets;
@@ -72,4 +71,4 @@ public class TweetAdapter {
             }
         }
     }
-}
+
