@@ -2,40 +2,30 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "33232dec3ff6bb862dc1a7bf7707bd43",
+    "identityHash": "a06521f5ba00a3f69536e75e77bd2cf4",
     "entities": [
       {
-        "tableName": "Tweet",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uid` INTEGER NOT NULL, `createdAt` TEXT, `body` TEXT, `user` TEXT)",
+        "tableName": "SampleModel",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `name` TEXT)",
         "fields": [
           {
-            "fieldPath": "uid",
-            "columnName": "uid",
+            "fieldPath": "id",
+            "columnName": "id",
             "affinity": "INTEGER",
-            "notNull": true
-          },
-          {
-            "fieldPath": "createdAt",
-            "columnName": "createdAt",
-            "affinity": "TEXT",
             "notNull": false
           },
           {
-            "fieldPath": "body",
-            "columnName": "body",
-            "affinity": "TEXT",
-            "notNull": false
-          },
-          {
-            "fieldPath": "user",
-            "columnName": "user",
+            "fieldPath": "name",
+            "columnName": "name",
             "affinity": "TEXT",
             "notNull": false
           }
         ],
         "primaryKey": {
-          "columnNames": [],
-          "autoGenerate": false
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
         },
         "indices": [],
         "foreignKeys": []
@@ -43,7 +33,7 @@
     ],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"33232dec3ff6bb862dc1a7bf7707bd43\")"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"a06521f5ba00a3f69536e75e77bd2cf4\")"
     ]
   }
 }

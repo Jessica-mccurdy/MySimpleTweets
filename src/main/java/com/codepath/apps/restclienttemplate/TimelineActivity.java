@@ -28,7 +28,7 @@ public class TimelineActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timeline);
-        client = (TwitterClient) TwitterApp.getRestClient();
+        client = (TwitterClient) TwitterApp.getRestClient(this);
 
         //find the RecyclerView
         rvTweets = (RecyclerView) findViewById(R.id.rvTweet);

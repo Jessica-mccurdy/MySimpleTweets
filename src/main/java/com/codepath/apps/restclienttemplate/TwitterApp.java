@@ -1,6 +1,7 @@
 package com.codepath.apps.restclienttemplate;
 
 import android.app.Application;
+import android.arch.persistence.room.Room;
 import android.content.Context;
 
 import com.facebook.stetho.Stetho;
@@ -15,14 +16,14 @@ import com.facebook.stetho.Stetho;
  *
  */
 public class TwitterApp extends Application {
-
-    public static Object getRestClient() {
-        return getRestClient();
-    }
+    MyDatabase myDatabase;
 
     @Override
     public void onCreate() {
         super.onCreate();
+
+        myDatabase = Room.databaseBuilder(this, MyDatabase.class, MyDatabase.NAME)
+                .fallbackToDestructiveMigration().build();
 
         // use chrome://inspect to inspect your SQL database
         Stetho.initializeWithDefaults(this);
@@ -31,5 +32,7 @@ public class TwitterApp extends Application {
     public static TwitterClient getRestClient(Context context) {
         return (TwitterClient) TwitterClient.getInstance(TwitterClient.class, context);
     }
+
+    public MyDatabase getMyDatabase() { return myDatabase; }
 
 }
