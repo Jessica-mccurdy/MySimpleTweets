@@ -4,8 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.Toast;
 
-import com.codepath.apps.restclienttemplate.models.SampleModel;
 import com.codepath.oauth.OAuthLoginActionBarActivity;
 
 public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
@@ -17,12 +17,9 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
 
-		final SampleModel sampleModel = new SampleModel();
-		sampleModel.setName("CodePath");
-
 		// final SampleModelDao sampleModelDao = ((TwitterApp) getApplicationContext()).getMyDatabase().sampleModelDao();
 
-		/*AsyncTask.execute(new Runnable() {
+		/* AsyncTask.execute(new Runnable() {
 			@Override
 			public void run() {
 				twitterDao.insertModel(sampleModel);
@@ -44,7 +41,7 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 	// i.e Display application "homepage"
 	@Override
 	public void onLoginSuccess() {
-		//Toast.makeText(this, "Success", Toast.LENGTH_LONG);
+		Toast.makeText(this, "Success", Toast.LENGTH_LONG).show();
 		// Intent i = new Intent(this, PhotosActivity.class);
 		// startActivity(i);
 		Intent i = new Intent(this, TimelineActivity.class);

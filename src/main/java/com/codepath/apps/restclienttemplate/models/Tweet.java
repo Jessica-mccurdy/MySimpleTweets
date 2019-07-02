@@ -4,28 +4,16 @@ package com.codepath.apps.restclienttemplate.models;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-//@Entity
+
 public class Tweet {
 
 
 
-    // Define database columns and associated fields
-   // @PrimaryKey
-   // @ColumnInfo
-    public long uid;
-    //@ColumnInfo
-    //String user;
-   // @ColumnInfo
-    public String createdAt;
-   // @ColumnInfo
     public String body;
+    public long uid;
     public User user;
+    public String createdAt;
 
-
-
-    // Use @Embedded to keep the column entries as part of the same table while still
-    // keeping the logical separation between the two objects.
-    //@Embedded
 
 
 
