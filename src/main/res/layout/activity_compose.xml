@@ -9,9 +9,10 @@
 
     <EditText
         android:id="@+id/et_simple"
-        android:layout_width="426dp"
-        android:layout_height="325dp"
+        android:layout_width="356dp"
+        android:layout_height="312dp"
         android:layout_marginTop="5dp"
+        android:hint="What is on your mind?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"></EditText>
@@ -22,7 +23,7 @@
         android:layout_height="110dp"
         android:layout_marginBottom="5dp"
         android:onClick="onSubmitTweet"
-        android:text="Button"
+        android:text="Tweet!"
         app:layout_constraintBottom_toTopOf="@+id/et_simple"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

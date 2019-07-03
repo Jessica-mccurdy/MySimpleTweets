@@ -5,7 +5,7 @@
     <item
         android:id="@+id/miCompose"
         android:icon="@drawable/ic_launcher"
-        android:onClick="statuses/update.json"
+        android:onClick="onComposeAction"
         app:showAsAction="ifRoom"
         android:title="Compose">
     </item>
