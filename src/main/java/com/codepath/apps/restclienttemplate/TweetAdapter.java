@@ -25,8 +25,8 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
         // for each row inflate the layout and cache references into ViewHolder
         @Override
         public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-
-            LayoutInflater inflater = LayoutInflater.from(context);
+            context = parent.getContext();
+            LayoutInflater inflater = LayoutInflater.from(context); // TODO check this
 
             View tweetView = inflater.inflate(R.layout.item_tweet, parent, false);
             ViewHolder viewHolder = new ViewHolder(tweetView);

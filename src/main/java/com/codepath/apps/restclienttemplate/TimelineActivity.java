@@ -68,7 +68,7 @@ public class TimelineActivity extends AppCompatActivity {
                                        }
                                        //Log.d("TwitterClient", response.toString());
                                    }
-                                   // problem area!!!!!!!! TODO fix brackets
+                                   //
 
 
                                    @Override
