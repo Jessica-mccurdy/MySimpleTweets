@@ -43,7 +43,6 @@ public class ComposeActivity extends AppCompatActivity {
         client.sendTweet(strValue, new JsonHttpResponseHandler() {
 
             // This is the important one where we have a success
-            @Override
             public void onSuccess(int statusCode, Header[] headers, JSONObject
                     response) {
                 //response is my tweet object
@@ -63,26 +62,22 @@ public class ComposeActivity extends AppCompatActivity {
 
             }
 
-            @Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray
                     response) {
                 Log.d("TwitterClient", response.toString());
             }
 
 
-            @Override
             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
                 Log.d("TwitterClient", responseString);
                 throwable.printStackTrace();
             }
 
-            @Override
             public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONArray errorResponse) {
                 Log.d("TwitterClient", errorResponse.toString());
                 throwable.printStackTrace();
             }
 
-            @Override
             public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
                 Log.d("TwitterClient", errorResponse.toString());
                 throwable.printStackTrace();
