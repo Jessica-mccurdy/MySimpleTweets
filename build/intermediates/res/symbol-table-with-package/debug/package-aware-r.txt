@@ -751,7 +751,6 @@ id list_item
 id media_actions
 id message
 id miCompose
-id miProfile
 id middle
 id multiply
 id never
