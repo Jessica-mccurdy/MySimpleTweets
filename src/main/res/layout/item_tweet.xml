@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/ivProfileImage"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,25 +18,36 @@
 
     <TextView
         android:id="@+id/tvUserName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="255dp"
+        android:layout_height="19dp"
         android:layout_marginStart="2dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="5dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvBody"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="255dp"
+        android:layout_height="29dp"
         android:layout_marginStart="5dp"
-        android:layout_marginTop="2dp"
         android:layout_marginEnd="5dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
         app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+    <TextView
+        android:id="@+id/timeStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="348dp"
+        tools:layout_editor_absoluteY="55dp" />
+
+
 </android.support.constraint.ConstraintLayout>

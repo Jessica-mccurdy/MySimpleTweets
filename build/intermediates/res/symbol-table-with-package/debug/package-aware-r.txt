@@ -811,6 +811,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id time
+id timeStamp
 id title
 id titleDividerNoCustom
 id title_template
