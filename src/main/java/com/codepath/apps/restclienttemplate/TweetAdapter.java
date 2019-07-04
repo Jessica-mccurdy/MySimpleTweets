@@ -63,6 +63,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder> 
             public ImageView ivProfileImage;
             public TextView tvUsername;
             public TextView tvBody;
+            public TextView tvTimeStamp;
 
             public ViewHolder(View itemView) {
                 super(itemView);
