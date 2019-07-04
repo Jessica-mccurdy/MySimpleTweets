@@ -2,6 +2,10 @@
      such as `res/menu/menu_movies.xml`  -->
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Customize your theme here. -->
+
+
     <item
         android:id="@+id/miCompose"
         android:icon="@drawable/ic_vector_compose"
@@ -11,6 +15,7 @@
         android:fillColor="#FF000000">
 
     </item>
+
     <!--
     <item
         android:id="@+id/miProfile"

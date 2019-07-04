@@ -3,9 +3,13 @@ package com.codepath.apps.restclienttemplate;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
@@ -22,6 +26,10 @@ public class ComposeActivity extends AppCompatActivity {
 
     private TwitterClient client;
     EditText simpleEditText;
+    public ImageView ivProfileImage;
+    public TextView tvUsername;
+    public TextView tvCount;
+
 
 
     @Override
@@ -32,7 +40,55 @@ public class ComposeActivity extends AppCompatActivity {
         client = (TwitterClient) TwitterApp.getRestClient(this);
 
         simpleEditText = (EditText) findViewById(R.id.et_simple);
+
+        tvCount = (TextView) findViewById(R.id.tvCount);
+        tvCount.setText("280");
+
+        simpleEditText.addTextChangedListener(new TextWatcher()
+        {
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count)
+            {
+            }
+
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int aft)
+            {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s)
+            {
+                // this will show characters remaining
+                tvCount.setText(280 - s.toString().length() + "/280");
+            }
+        });
+
+
+
+        /*
+        //below is work in progress TODO find current user image and name
+        // String imageUrl; //do i need this?
+        ImageView ivProfileImage;
+        TextView tvUsername;
+
+
+        ivProfileImage = (ImageView) findViewById((R.id.ivProfileImage));
+        tvUsername = (TextView) findViewById(R.id.tvUserName);
+
+        //need to get own username and image
+        tvUsername.setText();
+
+        // populate image
+        Glide.with(context)
+                .load(tweet.user.profileImageUrl)
+                .into(holder.ivProfileImage);
+
+*/
+
     }
+
+
 
 
 

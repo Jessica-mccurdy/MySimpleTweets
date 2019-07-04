@@ -829,6 +829,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView
 id time
 id title
 id titleDividerNoCustom
@@ -836,8 +837,10 @@ id title_template
 id top
 id topPanel
 id tvBody
+id tvCount
+id tvName
 id tvTimeStamp
-id tvUserName
+id tvUsername
 id uniform
 id up
 id useLogo
