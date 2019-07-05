@@ -13,21 +13,22 @@
         android:layout_height="526dp"
         android:layout_marginTop="5dp"
         android:hint="What is on your mind?"
+        android:maxLength="280"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivProfileImage"></EditText>
 
     <Button
         android:id="@+id/button"
-        android:layout_width="108dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="129dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/twitter_blue"
         android:onClick="onSubmitTweet"
         android:text="Tweet!"
-        android:backgroundTint="@color/twitter_blue"
         android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_simple"
+        app:layout_constraintEnd_toStartOf="@+id/ivProfileImage"
         tools:visibility="visible"></Button>
 
     <ImageView
@@ -42,30 +43,46 @@
 
     <TextView
         android:id="@+id/tvName"
-        android:layout_width="98dp"
-        android:layout_height="33dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
         android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvScreenName"
         app:layout_constraintEnd_toStartOf="@+id/ivProfileImage"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="1281dp" />
 
     <TextView
         android:id="@+id/tvCount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/et_simple"
+        app:layout_constraintBottom_toTopOf="@+id/et_simple"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ibExit"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="#FFFFFF"
+        android:tint="@color/twitter_blue"
+        android:onClick="onExit"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+    <TextView
+        android:id="@+id/tvScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:paddingTop="0dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/ivProfileImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
 </android.support.constraint.ConstraintLayout>

@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.codepath.apps.restclienttemplate.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
@@ -64,32 +65,86 @@ public class ComposeActivity extends AppCompatActivity {
             }
         });
 
+        //call network for user details
+        client.getVerifyCredentials(new JsonHttpResponseHandler() {
+
+                                   @Override
+                                   public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
+
+                                        Log.d("TwitterClient", response.toString());
+                                   }
 
 
-        /*
-        //below is work in progress TODO find current user image and name
-        // String imageUrl; //do i need this?
-        ImageView ivProfileImage;
-        TextView tvUsername;
+                                    // get user info
+                                   @Override
+                                   public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
+
+                                       //getting json object
+                                       //get info out of json object
+                                       try {
+                                           String name = response.getString("name");
+                                           String userName = "@" + response.getString("screen_name");
+                                           String profile_image_url = response.getString("profile_image_url_https");
+
+                                           //Context context;
+                                           // String imageUrl; //do i need this?
+                                           ImageView ivProfileImage;
+                                           TextView tvName;
+                                           TextView tvScreenName;
 
 
-        ivProfileImage = (ImageView) findViewById((R.id.ivProfileImage));
-        tvUsername = (TextView) findViewById(R.id.tvUserName);
 
-        //need to get own username and image
-        tvUsername.setText();
+                                           ivProfileImage = (ImageView) findViewById((R.id.ivProfileImage));
+                                           tvName = (TextView) findViewById(R.id.tvName);
+                                           tvScreenName = (TextView) findViewById(R.id.tvScreenName);
 
-        // populate image
-        Glide.with(context)
-                .load(tweet.user.profileImageUrl)
-                .into(holder.ivProfileImage);
+                                           //need to get own username and image
+                                           tvName.setText(name);
+                                           tvScreenName.setText(userName);
 
-*/
+
+                                           // populate image
+                                           Glide.with(getApplicationContext())
+                                                   .load(profile_image_url)
+                                                   .into(ivProfileImage);
+
+
+
+                                       } catch (JSONException e) {
+                                           e.printStackTrace();
+                                       }
+
+
+                                   }
+
+
+                                   @Override
+                                   public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
+                                       Log.d("TwitterClient", responseString);
+                                       throwable.printStackTrace();
+                                   }
+
+                                   @Override
+                                   public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONArray errorResponse) {
+                                       Log.d("TwitterClient", errorResponse.toString());
+                                       throwable.printStackTrace();
+                                   }
+
+                                   @Override
+                                   public void onFailure(int statusCode, Header[] headers, Throwable throwable, JSONObject errorResponse) {
+                                       Log.d("TwitterClient", errorResponse.toString());
+                                       throwable.printStackTrace();
+                                   }
+                               });
+
 
     }
 
 
-
+    public void onExit(View view){
+        Intent i = new Intent(ComposeActivity.this, TimelineActivity.class); //changed
+        startActivity(i);
+    }
 
 
 

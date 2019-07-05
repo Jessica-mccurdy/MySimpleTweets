@@ -754,6 +754,7 @@ id group_divider
 id groups
 id home
 id homeAsUp
+id ibExit
 id icon
 id icon_group
 id ifRoom
@@ -821,6 +822,7 @@ id start
 id status_bar_latest_event_content
 id submenuarrow
 id submit_area
+id swipeContainer
 id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
@@ -829,7 +831,6 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView
 id time
 id title
 id titleDividerNoCustom
@@ -839,6 +840,7 @@ id topPanel
 id tvBody
 id tvCount
 id tvName
+id tvScreenName
 id tvTimeStamp
 id tvUsername
 id uniform
@@ -881,6 +883,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_compose
+layout activity_details
 layout activity_login
 layout activity_timeline
 layout item_tweet
