@@ -1228,6 +1228,10 @@
         "source": "/Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/e53f4fecf18b605c0334089d9fb38da7/res/drawable-xxhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
+        "merged": "/Users/jessicamccurdy/Downloads/MySimpleTweets/app/build/intermediates/res/merged/debug/layout_action_view_progress.xml.flat",
+        "source": "/Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/res/layout/action_view_progress.xml"
+    },
+    {
         "merged": "/Users/jessicamccurdy/Downloads/MySimpleTweets/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "/Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/e53f4fecf18b605c0334089d9fb38da7/res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
@@ -1378,6 +1382,10 @@
     {
         "merged": "/Users/jessicamccurdy/Downloads/MySimpleTweets/app/build/intermediates/res/merged/debug/drawable_abc_btn_radio_material.xml.flat",
         "source": "/Users/jessicamccurdy/.gradle/caches/transforms-2/files-2.1/e53f4fecf18b605c0334089d9fb38da7/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/Users/jessicamccurdy/Downloads/MySimpleTweets/app/build/intermediates/res/merged/debug/drawable_ic_launcher_twitter_round.png.flat",
+        "source": "/Users/jessicamccurdy/Downloads/MySimpleTweets/app/src/main/res/drawable/ic_launcher_twitter_round.png"
     },
     {
         "merged": "/Users/jessicamccurdy/Downloads/MySimpleTweets/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_36dp.png.flat",

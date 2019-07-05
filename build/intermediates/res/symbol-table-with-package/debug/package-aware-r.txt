@@ -668,6 +668,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable flicks_movie_placeholder
 drawable ic_launcher
+drawable ic_launcher_twitter_round
 drawable ic_vector_compose
 drawable notification_action_background
 drawable notification_bg
@@ -771,6 +772,7 @@ id listMode
 id list_item
 id media_actions
 id message
+id miActionProgress
 id miCompose
 id middle
 id multiply
@@ -783,6 +785,7 @@ id notification_main_column_container
 id packed
 id parent
 id parentPanel
+id pbProgressAction
 id percent
 id progress_circular
 id progress_horizontal
@@ -882,6 +885,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout action_view_progress
 layout activity_compose
 layout activity_details
 layout activity_login

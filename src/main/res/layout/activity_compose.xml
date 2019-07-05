@@ -14,6 +14,7 @@
         android:layout_marginTop="5dp"
         android:hint="What is on your mind?"
         android:maxLength="280"
+        android:autoLink="all"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivProfileImage"></EditText>

@@ -1,7 +1,9 @@
 package com.codepath.apps.restclienttemplate;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.RequiresApi;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
@@ -33,7 +35,10 @@ public class TimelineActivity extends AppCompatActivity {
     ArrayList<Tweet> tweets;
     RecyclerView rvTweets;
     private final int REQUEST_CODE = 20;
+    // Instance of the progress action-view
+    MenuItem miActionProgressItem;
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,8 +81,9 @@ public class TimelineActivity extends AppCompatActivity {
                 android.R.color.holo_red_light);
 
 
-
+        //Objects.requireNonNull(getActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.twitter_blue)));
         populateTimeline();
+
     }
 
     public void fetchTimelineAsync(int page) {
@@ -109,25 +115,42 @@ public class TimelineActivity extends AppCompatActivity {
     }
 
 
-
     // creates a menu
-    // creates action bar
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
-
         return true;
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        // Store instance of the menu item containing progress
+        miActionProgressItem = menu.findItem(R.id.miActionProgress);
+
+        // Return to finish
+
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    public void showProgressBar() {
+        // Show progress item
+        miActionProgressItem.setVisible(true);
+    }
+
+    public void hideProgressBar() {
+        // Hide progress item
+        miActionProgressItem.setVisible(false);
     }
 
 
     public void onComposeAction(MenuItem mi) {
-        // handle click here
-
         //where we will open new activity
         Intent i = new Intent(TimelineActivity.this, ComposeActivity.class); //changed
         i.putExtra("mode", 2); // pass arbitrary data to launched activity
+        showProgressBar();
         startActivityForResult(i, REQUEST_CODE);
+
 
     }
 
@@ -145,10 +168,12 @@ public class TimelineActivity extends AppCompatActivity {
             tweets.add(0, tweet);
             tweetAdapter.notifyItemInserted(0);
             rvTweets.scrollToPosition(0);
+            hideProgressBar();
 
         }
     }
 
+    //main method for loading up the view
     private void populateTimeline() {
 
         client.getHomeTimeline(new JsonHttpResponseHandler() {

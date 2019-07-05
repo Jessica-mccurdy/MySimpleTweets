@@ -63,6 +63,7 @@ public class ComposeActivity extends AppCompatActivity {
                 // this will show characters remaining
                 tvCount.setText(280 - s.toString().length() + "/280");
             }
+
         });
 
         //call network for user details
@@ -139,6 +140,8 @@ public class ComposeActivity extends AppCompatActivity {
 
 
     }
+
+
 
 
     public void onExit(View view){
