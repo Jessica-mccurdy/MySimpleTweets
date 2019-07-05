@@ -1,4 +1,4 @@
-#Fri Jul 05 14:48:52 PDT 2019
+#Fri Jul 05 14:55:59 PDT 2019
 base.0=/Users/jessicamccurdy/Downloads/MySimpleTweets/app/build/intermediates/dex/debug/mergeDexDebug/out
 path.0=classes.dex
 renamed.0=classes.dex
