@@ -31,16 +31,20 @@ public class TimelineActivity extends AppCompatActivity {
 
     private TwitterClient client;
     private SwipeRefreshLayout swipeContainer;
+    private final int REQUEST_CODE = 20;
+
     TweetAdapter tweetAdapter;
     ArrayList<Tweet> tweets;
     RecyclerView rvTweets;
-    private final int REQUEST_CODE = 20;
+
     // Instance of the progress action-view
     MenuItem miActionProgressItem;
 
+    // Activity starts, views filled (through adapter), refresh listener set up
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timeline);
         client = (TwitterClient) TwitterApp.getRestClient(this);
@@ -57,23 +61,23 @@ public class TimelineActivity extends AppCompatActivity {
         rvTweets.setAdapter(tweetAdapter);
         rvTweets.scrollToPosition(0);
 
+        // Adds lines between tweets
         rvTweets.addItemDecoration(new DividerItemDecoration(this,
                 DividerItemDecoration.VERTICAL));
 
         // Lookup the swipe container view
         swipeContainer = (SwipeRefreshLayout) findViewById(R.id.swipeContainer);
+
         // Setup refresh listener which triggers new data loading
         swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
-                // Your code to refresh the list here.
-                // Make sure you call swipeContainer.setRefreshing(false)
-                // once the network request has completed successfully.
                 fetchTimelineAsync(0);
                 swipeContainer.setRefreshing(false);
-
             }
+
         });
+
         // Configure the refreshing colors
         swipeContainer.setColorSchemeResources(android.R.color.holo_blue_bright,
                 android.R.color.holo_green_light,
@@ -81,7 +85,6 @@ public class TimelineActivity extends AppCompatActivity {
                 android.R.color.holo_red_light);
 
 
-        //Objects.requireNonNull(getActionBar()).setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.twitter_blue)));
         populateTimeline();
 
     }
@@ -89,8 +92,10 @@ public class TimelineActivity extends AppCompatActivity {
     public void fetchTimelineAsync(int page) {
         // Send the network request to fetch the updated data
         // `client` here is an instance of Android Async HTTP
-        // getHomeTimeline is an example endpoint.
+        // getHomeTimeline is an endpoint.
+
         client.getHomeTimeline(new JsonHttpResponseHandler() {
+
             public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
                 // Remember to CLEAR OUT old items before appending in the new ones
                 tweetAdapter.clear();
@@ -107,29 +112,27 @@ public class TimelineActivity extends AppCompatActivity {
                 // Now we call setRefreshing(false) to signal refresh has finished
                 swipeContainer.setRefreshing(false);
             }
-
             public void onFailure(Throwable e) {
                 Log.d("DEBUG", "Fetch timeline error: " + e.toString());
             }
         });
     }
 
-
     // creates a menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+        getSupportActionBar().setTitle("Your Feed");
         return true;
     }
 
+    // for progress bar
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {
         // Store instance of the menu item containing progress
         miActionProgressItem = menu.findItem(R.id.miActionProgress);
-
         // Return to finish
-
         return super.onPrepareOptionsMenu(menu);
     }
 
@@ -143,33 +146,30 @@ public class TimelineActivity extends AppCompatActivity {
         miActionProgressItem.setVisible(false);
     }
 
-
+    // user clicks compose and goes to new activity
     public void onComposeAction(MenuItem mi) {
         //where we will open new activity
-        Intent i = new Intent(TimelineActivity.this, ComposeActivity.class); //changed
-        i.putExtra("mode", 2); // pass arbitrary data to launched activity
+        Intent i = new Intent(TimelineActivity.this, ComposeActivity.class);
+        // pass arbitrary data to launched activity
+        i.putExtra("mode", 2);
+        // start progress bar to show loading next page
         showProgressBar();
         startActivityForResult(i, REQUEST_CODE);
-
-
     }
-
-
 
     // ActivityOne.java, time to handle the result of the sub-activity
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         // REQUEST_CODE is defined above
         if (resultCode == RESULT_OK && requestCode == REQUEST_CODE) {
-
             // get tweet
             Tweet tweet = (Tweet) Parcels.unwrap(getIntent().getExtras().getParcelable("tweet"));
-
+            // add new tweet to local feed
             tweets.add(0, tweet);
             tweetAdapter.notifyItemInserted(0);
             rvTweets.scrollToPosition(0);
+            // ending from start of call
             hideProgressBar();
-
         }
     }
 
@@ -195,12 +195,9 @@ public class TimelineActivity extends AppCompatActivity {
                                                e.printStackTrace();
                                            }
                                        }
-
-                                       //Log.d("TwitterClient", response.toString());
                                    }
-                                   //
 
-
+                                    // Required functions
                                    @Override
                                    public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                                        Log.d("TwitterClient", response.toString());

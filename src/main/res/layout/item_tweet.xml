@@ -60,5 +60,21 @@
         app:layout_constraintStart_toEndOf="@+id/tvName"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!--
+    <Button
+        android:id="@+id/btDetails"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="56dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/twitter_blue"
+        android:fontFamily="sans-serif"
+        android:text="More"
+        android:onClick="onDetails"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+        -->
+
 
 </android.support.constraint.ConstraintLayout>

@@ -14,7 +14,9 @@ import com.codepath.oauth.OAuthLoginActionBarActivity;
 public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 
 	SampleModelDao sampleModelDao;
-	
+
+
+	// Code not changed
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -34,7 +36,6 @@ public class LoginActivity extends OAuthLoginActionBarActivity<TwitterClient> {
 
 
 	}
-
 
 	// Inflate the menu; this adds items to the action bar if it is present.
 	@Override
