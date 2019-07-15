@@ -2,7 +2,7 @@
 
 My Simple Tweets is an android app that allows a user to view his Twitter timeline and post a new tweet. The app utilizes [Twitter REST API](https://dev.twitter.com/rest/public).
 
-Time spent: **X** hours spent in total
+Time spent: **18.5** hours spent in total
 
 ## User Stories
 
@@ -45,19 +45,22 @@ The following **bonus** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [x] List anything else that you can get done to improve the app functionality!
+- I made it so that the tweets would not be truncated :)
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/Jessica-mccurdy/MySimpleTweets/blob/master/TwitterWalkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+I had a hard time at first understanding client calls but I feel like I have a much better grasp now. I was not used to working with APIs so I had some trouble there. 
 
 ## Open-source libraries used
 
