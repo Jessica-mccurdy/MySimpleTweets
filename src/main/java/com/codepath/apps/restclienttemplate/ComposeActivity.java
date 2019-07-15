@@ -31,6 +31,10 @@ public class ComposeActivity extends AppCompatActivity {
     public TextView tvUsername;
     public TextView tvCount;
 
+    //Push practice
+
+
+
     // Activity starts - all views are filled
     @Override
     protected void onCreate(Bundle savedInstanceState) {
